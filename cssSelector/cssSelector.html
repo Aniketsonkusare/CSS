@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cssSelector</title>  
+    <style>
+        /* universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* element selector */
+        h1{  
+            color: red;
+        }
+        div{
+            background-color: aquamarine;
+        }
+        /* id selector */
+        #red{
+            background-color: red;
+        }
+        /* class selector */
+        .blue{
+            background-color: blue;
+            color: white;
+            border: 2px solid black;
+        }
+        /* grouping selector */
+        h1,h2,h3{
+            color: blue;
+            background-color: black;
+        }
+
+        /* this is a comment */
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>This is my CSS selector page</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatum iure laborum soluta necessitatibus culpa omnis quisquam alias repellat vel eos, voluptates eaque consequatur earum tempore accusantium enim modi provident!</p>
+        
+        <div id="red">bg is red</div>
+        <span class="blue">first tag</span>
+        <span class="blue">second tag</span>
+        <span class="blue">third tag</span>
+        <br>
+        <br>
+        <h1>h1 tag</h1>
+        <br>
+        <h2>h2 tag</h2>
+        <br>
+        <h3>h3 tag</h3>
+    </div>
+</body>
+</html>
