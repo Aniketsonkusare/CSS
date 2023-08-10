@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+</head>
+<style>
+    .container {
+        display: flex;
+    }
+
+    .card {
+        margin: 23px 12px;
+        padding: 23px 12px;
+        /* border: 2px solid red; */
+        background-color: burlywood;
+
+        /* box-shadow: offset-x offset-y color; */
+        /* box-shadow: offset-x offset-y blur-redius color; */
+        /* box-shadow: offset-x offset-y blur-redius spread-redius color; */
+
+        /* box-shadow: 10px 13px gray; */
+        /* box-shadow: -10px -13px gray; */
+        /* box-shadow: 7px 5px 10px green; */      /* here 10px is a blure shadow */
+        /* box-shadow: -7px -5px 10px green; */
+        /* box-shadow: -7px -5px 10px 34px green; */ /* here 34px is a spreedsheet */
+        /* box-shadow: -7px -5px 10px 34px rgba(71, 172, 172, 0.5);  */
+        /* box-shadow: inset 3px 5px green; */   /* inline box shadow */
+        box-shadow: 3px 5px green, 4px 6px red;    /* multipale box shadow */
+
+        
+    }
+    .card h2{
+        /* text-shadow: 2px 1px blueviolet; */
+        text-shadow: 2px 1px 6px blueviolet;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card" id="car-1">
+            <h2> This is HTML Course </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque non aspernatur quae ipsa illo quisquam
+                quasi, suscipit, modi sequi sint deserunt temporibus illum vel repellendus deleniti. Nulla aliquam totam
+                sapiente!</p>
+        </div>
+        <div class="card" id="car-2">
+            <h2> This is CSS course </h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex ab vel in earum corrupti excepturi totam hic
+                tenetur vero? Illum consequatur accusamus nobis, repudiandae sequi voluptates nisi sunt commodi dolore!
+            </p>
+        </div>
+        <div class="card" id="car-3">
+            <h2> This is JavaScript course </h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, fuga. In quam labore atque! Voluptatum
+                libero nam sed unde quae nulla. Enim fugiat a cupiditate illo deleniti molestiae quae delectus.</p>
+        </div>
+    </div>
+</body>
+
+</html>
