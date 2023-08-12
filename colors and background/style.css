@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.red{
+    background-color: rgb(161, 68, 68);
+    color: white;
+}
+.green{
+    /* rgb color */
+    background-color: rgb(57, 146, 57);
+    color: aquamarine;
+}
+.blue{
+    /* hex color */
+    background-color: #091edb8f;
+    color: white;
+}
