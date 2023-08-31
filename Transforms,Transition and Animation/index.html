@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .container{
+            background-color: red;
+            height: 455px;
+        }
+        .box{
+            display: inline-block;
+            border: 2px solid black;
+            /* transform: translate(134px,56px) rotateX(45deg); */
+            /* transform-origin: 0; */
+            /* transform: scale(2, 4); */
+            /* transform: scaleX(5); */
+            /* transform: scaleY(2); */
+            /* transform: skew(110deg, 10deg); */
+        }
+        img{
+            width: 146px;
+            height: 455px;
+            /* transition-property: width;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            transition-delay: 2s; */
+            transition: width 1s ease-in-out, height 2s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img id="myimg" src="https://source.unsplash.com/260x120/?nature,water" alt="">
+        </div>
+        <button style="color: aquamarine; background-color: black;" id="btn">Toggle</button>
+    </div>
+</body>
+<script>
+    myimg.style.width = "146px"
+    myimg.style.height = "16px"
+    btn.addEventListener("click",()=>{
+        myimg.style.height = "447px"
+        if (myimg.style.width === "546px") {
+            myimg.style.height = "16px"
+            myimg.style.width = "146px"
+        }
+        else if (myimg.style.width === "146px") {
+            myimg.style.width = "546px"
+        }
+    })
+</script>
+</html>
