@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix sign in page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="logo">
+        <img class="logo" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" alt="">
+    </div>
+    <div class="form">
+        <h1>Sign in</h1>
+        <div class="form1">
+            <td><input type="email" placeholder="Email or Phone number" id="email" 
+            onblur="valid(this,'emailerror')">
+            <span id="emailerror"></span>
+            </td>
+            <td>
+            <input type="password" placeholder="Password" id="password"
+            onblur="valid1(this,'passworderror')">
+            <span id="passworderror"></span>
+             </td>
+            <input type="submit" value="Sign in">
+            <input type="checkbox"><span>Remember me</span>
+            <a href="#">Need help?</a>
+        </div>
+        <div class="text">
+            <h4>New to Netflix? <a href="#">Sign up now</a></h4><br><br>
+            <p>This page is protected by Google reCAPTCHA to <br>
+                ensure you're not a bot. <a href="">Learn more.</a> </p>
+        </div>
+
+    </div>
+
+    <div class="foot">
+        <li>Questions? Call 000-800-919-1694</li><br>
+        <li class="foot1">
+            <a href="">FAQ</a>
+            <a href="">Help Centre</a>
+            <a href="">Terms of Use</a>
+            <a href="">Privacy</a>
+            <a href="">Cookie Preferences</a>
+            <a href="">Corporate Information</a>
+        </li>
+    </div>
+
+</body>
+
+<script src="index.js"></script>
+</html>
